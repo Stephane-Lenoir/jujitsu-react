@@ -4,7 +4,7 @@ import { ImageArticle } from "../components/ui/ImageArticle"
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-    title: "L'École de Ju-Jutsu",
+    title: "L'École de Ju-Jitsu Crégy-les-Meaux",
     description: 'Découvrez notre école de Ju-Jutsu Traditionnel et la méthode Wa-Jutsu enseignée par Maître Jacques-Jean QUERO.',
     keywords: ['école ju-jutsu', 'Wa-Jutsu', 'Maître QUERO', 'enseignement']
   }

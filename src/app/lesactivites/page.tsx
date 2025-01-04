@@ -4,7 +4,7 @@ import { Carousel } from "../components/carousel/Carousel"
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-    title: 'Nos Activités',
+    title: 'Ju-Jitsu Crégy-les-Meaux Les Activités',
     description: 'Découvrez nos activités : stages, démonstrations, et entraînements collectifs de Ju-Jutsu Traditionnel.',
     keywords: ['activités', 'stages', 'kagami', 'entraînements']
   }

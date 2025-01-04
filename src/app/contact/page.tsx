@@ -5,7 +5,7 @@ import { ContactInfo } from '../components/ui/ContactInfo'
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-    title: 'Contactez-nous',
+    title: 'Jujitsu Crégy-les-Meaux Contactez-nous',
     description: 'Contactez notre équipe du club de Ju-Jutsu Traditionnel de Crégy-les-Meaux.',
     keywords: ['contact', 'message', 'équipe', 'communication']
   }

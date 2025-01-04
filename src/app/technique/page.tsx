@@ -5,7 +5,7 @@ import { TextSection } from "../components/ui/TextSection"
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-  title: 'La Technique',
+  title: 'Ju-Jitsu Crégy-les-Meaux La Technique',
   description: 'Apprentissage technique du Ju-Jutsu Traditionnel pour enfants et adultes. Méthode et principes d\'enseignement.',
   keywords: ['technique ju-jutsu', 'cours enfants', 'cours adultes', 'apprentissage']
 }

@@ -4,7 +4,7 @@ import { ClubHistory } from '../components/ui/ClubHistory'
 import { DojoInfo } from '../components/ui/DojoInfo'
 
 export const metadata: Metadata = {
-  title: 'Le Club de Ju-Jutsu',
+  title: 'Ju-Jitsu Crégy-les-Meaux Le Club',
   description: 'Découvrez l\'histoire et les installations du club de Ju-Jutsu Traditionnel de Crégy-les-Meaux, membre de l\'A.C.S.L.',
   keywords: ['ACSL', 'Crégy-Les-Meaux', 'dojo', 'club ju-jutsu', 'histoire']
 }

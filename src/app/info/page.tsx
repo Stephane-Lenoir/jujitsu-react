@@ -4,7 +4,7 @@ import { BushidoList } from '../components/ui/BushidoList'
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-  title: 'Informations - Horaires et Contact',
+  title: 'Ju-Jitsu Crégy-les-Meaux Informations - Horaires et Contact',
   description: 'Horaires des cours, informations pratiques et contacts du club de Ju-Jutsu Traditionnel de Crégy-les-Meaux.',
   keywords: ['horaires', 'contact', 'bushido', 'informations pratiques']
 }

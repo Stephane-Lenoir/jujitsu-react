@@ -7,7 +7,7 @@ import { TextSection } from '../components/ui/TextSection'
 import { MotionDiv } from '../components/ui/MotionDiv'
 
 export const metadata: Metadata = {
-    title: 'Inscriptions',
+    title: 'Ju-Jitsu Crégy-les-Meaux Inscriptions',
     description: 'Modalités d\'inscription, tarifs et documents nécessaires pour rejoindre le club de Ju-Jutsu Traditionnel.',
     keywords: ['inscription', 'tarifs', 'documents', 'adhésion']
   }
