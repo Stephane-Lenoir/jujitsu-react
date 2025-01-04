@@ -44,8 +44,8 @@ body.menu-open {
   background: linear-gradient(
     to bottom,
     #f2e205 0%,
-    #f2e205 50%,
-    #f3b705 50%,
+    #f2e205 45%,
+    #f3b705 45%,
     #f3b705 100%
   );
   -webkit-background-clip: text;
