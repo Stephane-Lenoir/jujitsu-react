@@ -39,11 +39,20 @@ body.menu-open {
   }
 
   h1 {
-    @apply pb-8 text-6xl font-sedan text-center;
-    text-shadow: 2px 1px 1px #feffbe;
-    color: var(--text-primary);
+    @apply text-4xl md:text-8xl text-center font-open-sans pb-8 font-bold;
+  color: transparent;
+  background: linear-gradient(
+    to bottom,
+    #f2e205 0%,
+    #f2e205 50%,
+    #f3b705 50%,
+    #f3b705 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 10px rgba(243, 183, 5, 0.5);
   }
-
+      
   h2 {
     @apply font-open-sans text-3xl text-[#A68A72] underline decoration-[#A68A72] font-bold;
     text-decoration: underline !important;
