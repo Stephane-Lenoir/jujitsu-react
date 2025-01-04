@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  cursor: url('/assets/cursors/curseur.png'), auto !important;
+}
+
+
+:root {
+  --background-start: #f2f2f2;
+  --background-end: #faf8f8; 
+  --secondary: #f3b705;
+  --accent: #f2e205;
+  --text-primary: #0d0000;
+}
+
+body {
+  @apply m-0 p-0 overflow-hidden cursor-[url('/assets/cursors/curseur.png'),auto];
+  @apply overflow-x-hidden min-h-screen;
+  background: linear-gradient(135deg, 
+    var(--background-start) 0%, 
+    var(--background-start) 20%,    /* Maintient la couleur de départ plus longtemps */
+    var(--background-end) 100%
+  );
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+
+  h1 {
+    @apply pb-8 text-6xl font-sedan text-center;
+    text-shadow: 2px 1px 1px #feffbe;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    @apply font-open-sans text-3xl text-[#A68A72] underline decoration-[#A68A72] font-bold;
+    text-decoration: underline !important;
+  }
+
+  h2.no-underline {
+    @apply text-2xl md:text-4xl text-black text-center font-open-sans pb-8 shadow-accent font-bold;
+    text-decoration: none !important;
+  }
+
+  h3{ 
+    @apply pb-8 text-4xl font-open-sans text-center underline decoration-[#A68A72] font-bold;
+    text-shadow: 2px 1px 1px #feffbe;
+    color: var(--text-primary);
+    text-decoration: underline !important;
+  }
+
+  p {
+    @apply pb-8 text-2xl font-open-sans;
+    color: var(--text-primary);
+  }
+
+  a {
+    @apply no-underline hover:text-accent hover:cursor-[url('/assets/cursors/curseur.png'),auto];
+    color: var(--text-primary);
+    text-decoration: none !important;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .menu {
+    @apply font-open-sans p-0 text-3xl;
+  }
+
+  .active {
+    @apply text-[#f3b705];
+  }
+
+  .footer {
+    @apply pt-8 text-2xl text-center bg-[#F2E205] w-1/2 mx-auto rounded-2xl;
+  }
+}
+
+writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.bushido-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .bushido-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bushido-container > div {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+}
+
+/* Content and Animation Styles */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.fade-out-rotate-container {
+  animation: fade-out-rotate 6s forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+@keyframes fade-out-rotate {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Page d'accueil Styles */
+.pageaccueil {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.pageaccueil.visible {
+  opacity: 1;
+}
+
+/*Bannière*/
+@keyframes bannerWave {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.01);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.banner-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.banner-container:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  animation: bannerWave 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Animations des titres */
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classes d'animation pour les titres */
+.title-main {
+  animation: fadeInSlideDown 1.5s ease-out;
+}
+
+.title-sub {
+  animation: fadeInSlideUp 1.5s ease-out 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Animation du menu au défilement */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-scrolled {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: slideInFromTop 0.3s ease-out;
+  background: #F2E205;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation des liens du menu */
+.nav-link-animated {
+  position: relative;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: currentColor;
+  transition: all 0.3s ease;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
+  left: 0;
+}
