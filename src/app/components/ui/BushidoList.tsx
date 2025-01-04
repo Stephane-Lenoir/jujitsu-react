@@ -7,7 +7,7 @@ export const BushidoList = () => {
     <div className="pl-15 flex-1"> {/* Modifié la marge */}
       <div className="relative w-[100%]"> {/* Ajouté pour contrôler la taille de l'image */}
         <div className="absolute inset-0 bg-[url('/assets/backgrounds/arrbushi.webp')] bg-cover bg-no-repeat bg-center opacity-20" />
-        <ul className="relative z-10 text-[#A68A72] pl-20">
+        <ul className="relative z-10 text-[#0d0000] pl-20">
           <motion.li
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}

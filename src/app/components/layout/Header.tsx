@@ -23,14 +23,14 @@ export const Header = () => {
 
   return (
     <header className="w-full relative">
-      <h1 className="text-4xl md:text-8xl text-center font-open-sans pb-8  font-bold">
+      <h1 className="text-4xl md:text-8xl text-center font-open-sans pb-8 title-main font-bold">
         Ju-Jutsu Traditionnel
       </h1>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
-        Méthode Wa-jutsu - club affilié à l&apos;académie europeenne de Ju-Jitsu 
+        MÉTHODE WA-JUTSU - CLUB AFFILIÉ À L&apos;ACADÉMIE EUROPÉENNE DE JU-JITSU 
       </h2>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
-        Discipline à but non compétitif
+        DISCIPLINE À BUT NON COMPÉTITIF
       </h2>
 
       <div className="relative w-full max-w-[90vw] mx-auto">
@@ -65,7 +65,7 @@ export const Header = () => {
               pathname === routes.info ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            Infos
+            INFOS
           </Link>
           <Link 
             href={routes.ecole}
@@ -73,7 +73,7 @@ export const Header = () => {
               pathname === routes.ecole ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            L&apos;école
+            L&apos;ÉCOLE
           </Link>
           <Link 
             href={routes.oclub}
@@ -81,7 +81,7 @@ export const Header = () => {
               pathname === routes.oclub ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            Le club
+            LE CLUB
           </Link>
           <Link 
             href={routes.inscription}
@@ -89,7 +89,7 @@ export const Header = () => {
               pathname === routes.inscription ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            Inscriptions
+            INSCRIPTIONS
           </Link>
           <Link 
             href={routes.lesactivites}
@@ -97,7 +97,7 @@ export const Header = () => {
               pathname === routes.lesactivites ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            Activités
+            ACTIVITÉS
           </Link>
           <Link 
             href={routes.technique}
@@ -105,7 +105,7 @@ export const Header = () => {
               pathname === routes.technique ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            La technique
+            LA TECHNIQUE
           </Link>
           <Link 
             href={routes.contact}
@@ -113,7 +113,7 @@ export const Header = () => {
               pathname === routes.contact ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
             }`}
           >
-            Contact
+            CONTACT
           </Link>
         </div>
       </nav>

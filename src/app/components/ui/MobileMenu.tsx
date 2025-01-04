@@ -56,7 +56,7 @@ export const MobileMenu = () => {
                   pathname === routes.info ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                Infos
+                INFOS
               </Link>
               <Link 
                 href={routes.ecole}
@@ -65,7 +65,7 @@ export const MobileMenu = () => {
                   pathname === routes.ecole ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                L&apos;école
+                L&apos;ÉCOLE
               </Link>
               <Link 
                 href={routes.oclub}
@@ -74,7 +74,7 @@ export const MobileMenu = () => {
                   pathname === routes.oclub ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                Le club
+                LE CLUB
               </Link>
               <Link 
                 href={routes.inscription}
@@ -83,7 +83,7 @@ export const MobileMenu = () => {
                   pathname === routes.inscription ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                Inscriptions
+                INSCRIPTIONS
               </Link>
               <Link 
                 href={routes.lesactivites}
@@ -92,7 +92,7 @@ export const MobileMenu = () => {
                   pathname === routes.lesactivites ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                Activités
+                ACTIVITÉS
               </Link>
               <Link 
                 href={routes.technique}
@@ -101,7 +101,7 @@ export const MobileMenu = () => {
                   pathname === routes.technique ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                La technique
+                LA TECHNIQUE
               </Link>
               <Link 
                 href={routes.contact}
@@ -110,7 +110,7 @@ export const MobileMenu = () => {
                   pathname === routes.contact ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
-                Contact
+                CONTACT
               </Link>
             </div>
           </div>
