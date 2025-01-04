@@ -279,3 +279,46 @@ writing-vertical-rl {
   width: 100%;
   left: 0;
 }
+
+.pricing-card-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.pricing-card {
+  transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  transform-origin: center;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond par défaut semi-transparent */
+}
+
+.pricing-card:hover {
+  transform: scale(1.5); /* Agrandit la carte */
+  z-index: 10; /* Place la carte devant les autres */
+  opacity: 1; /* Assure que la carte survolée reste complètement opaque */
+  background-color: rgba(255, 255, 255, 1); /* Fond totalement opaque lorsqu'elle est survolée */
+}
+
+.pricing-card-container:hover .pricing-card:not(:hover) {
+  transform: scale(0.8); /* Réduit les autres cartes */
+  opacity: 0.5; /* Rend les autres cartes semi-transparentes */
+}
+
+/* Désactiver les effets sur les petits écrans */
+@media (max-width: 768px) {
+  .pricing-card {
+    transition: none; /* Désactive les transitions */
+    transform: none; /* Pas de changement de taille */
+    opacity: 1; /* Pas de transparence */
+    background-color: rgba(255, 255, 255, 1); /* Toujours opaque */
+  }
+
+  .pricing-card-container:hover .pricing-card:not(:hover) {
+    transform: none; /* Aucun effet pour les autres cartes */
+    opacity: 1; /* Pas de transparence */
+  }
+
+  .pricing-card:hover {
+    transform: none; /* Désactive l'agrandissement */
+  }
+}

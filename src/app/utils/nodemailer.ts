@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 export const sendEmail = async (name: string, prenom: string, email: string, message: string) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,  // C'est l'email que tu utiliseras pour envoyer
-    to: 'jujutsu.cregy@gmail.com', // L'email où tu veux recevoir les messages
+    to: 'brunodeboffle@sfr.fr', // L'email où tu veux recevoir les messages
     subject: 'Nouveau message du formulaire de contact',
     html: `
       <h2>Nouveau message de contact</h2>

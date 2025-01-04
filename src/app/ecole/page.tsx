@@ -19,7 +19,7 @@ export default function EcolePage() {
         imageLink="https://www.aejt-jjquero.com/"
         content={
           <div className="space-y-4">
-            <MotionDiv direction="down">
+            <MotionDiv direction="center">
             <p className="font-open-sans text-lg">
               Le Ju-Jutsu est un ancien art Japonais de self-défense vieux de plusieurs siècles.
             </p>
@@ -30,7 +30,7 @@ export default function EcolePage() {
               Aujourd&apos;hui, il est considéré comme l&apos;un des systèmes d&apos;arts martiaux enseigné parmi les plus efficaces et les plus adaptés.
             </p>
             </MotionDiv>
-            <MotionDiv direction="right">
+            <MotionDiv direction="center">
             <p className="font-open-sans text-lg">
               Le Ju-Jutsu est un ensemble composé de projections, systèmes de clés, d&apos;attaques aux centres nerveux, de manipulations des articulations et techniques de coups de pieds et de mains aux points vitaux du corps.
             </p>

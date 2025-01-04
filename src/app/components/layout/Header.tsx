@@ -23,11 +23,11 @@ export const Header = () => {
 
   return (
     <header className="w-full relative">
-      <h1 className="gradient-title text-4xl md:text-8xl text-center font-open-sans pb-8 font-bold">
+      <h1 className="text-4xl md:text-8xl text-center font-open-sans pb-8  font-bold">
         Ju-Jutsu Traditionnel
       </h1>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
-        Méthode Wa-jutsu - club affilié à l&apos;académie européenne de Ju-Jitsu 
+        Méthode Wa-jutsu - club affilié à l&apos;académie europeenne de Ju-Jitsu 
       </h2>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
         Discipline à but non compétitif

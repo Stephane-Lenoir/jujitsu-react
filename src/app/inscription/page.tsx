@@ -44,9 +44,10 @@ export default function InscriptionPage() {
 
         <RequiredDocuments />
 
-        <div className="grid md:grid-cols-2 gap-8 mb-4">
+        <div className="pricing-card-container grid md:grid-cols-2 gap-8 mb-4">
           <MotionDiv direction="left">
           <PricingCard
+            className="pricing-card"
             title="Tarif annuel adulte"
             price="200 € /an"
             description="*Deux cours par semaine"
@@ -60,6 +61,7 @@ export default function InscriptionPage() {
           </MotionDiv>
           <MotionDiv direction="right">
           <PricingCard
+            className="pricing-card"
             title="Tarif annuel enfant"
             price="150 € /an"
             description="* Un cours par semaine (mardi)"
