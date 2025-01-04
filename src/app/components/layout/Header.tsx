@@ -27,7 +27,7 @@ export const Header = () => {
         Ju-Jutsu Traditionnel
       </h1>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
-        Méthode Wa-jutsu - club affilié à l&apos;académie europeenne de Ju-Jitsu 
+        Méthode Wa-jutsu - club affilié à l&apos;académie européenne de Ju-Jitsu 
       </h2>
       <h2 className="text-2xl md:text-4xl text-[#0d0000] text-center font-open-sans pb-8 shadow-accent title-sub no-underline">
         Discipline à but non compétitif
