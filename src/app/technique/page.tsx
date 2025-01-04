@@ -49,7 +49,7 @@ export default function TechniquePage() {
         </h2>
       <MotionDiv direction="left">
         <TextSection
-          title="Les cours enfants"
+          title="Informations cours enfants"
           content="L'étude de la progression technique peut-être abordée dés l'âge de 6 ans. 
           Dans cette étude les enfants sont initiés progressivement aux techniques de 
           dégagements et de contrôles. Les cours sont constitués de façon à accroître 
@@ -69,7 +69,7 @@ export default function TechniquePage() {
       </MotionDiv>
       <MotionDiv direction="left">
         <TextSection
-          title="Les cours adultes"
+          title="Informations cours adultes"
           content="Dans l'enseignement, toujours pas de pratique en force, pas d'agressivité, 
           pas de violence dans l'exécution des techniques. Simplement la recherche du 
           principe « Ju » symbole de souplesse, flexibilité « Minimum d'effort pour un 
