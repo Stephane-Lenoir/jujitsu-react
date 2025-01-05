@@ -40,17 +40,30 @@ body.menu-open {
 
   h1 {
     @apply text-4xl md:text-8xl text-center font-open-sans pb-8 font-bold;
-  color: transparent;
-  background: linear-gradient(
-    to bottom,
-    #f2e205 0%,
-    #f2e205 45%,
-    #f3b705 45%,
-    #f3b705 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: 0px 0px 10px rgba(243, 183, 5, 0.5);
+    color: transparent;
+    background: linear-gradient(
+      to bottom,
+      #f2e205 0%,
+      #f2e205 var(--gradient-stop),    /* Utilisation d'une variable CSS */
+      #f3b705 var(--gradient-stop),    /* Utilisation de la même variable */
+      #f3b705 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 10px rgba(243, 183, 5, 0.5);
+  }
+  
+  /* Ajustement du point d'arrêt du dégradé selon la taille d'écran */
+  @media (max-width: 768px) {
+    h1 {
+      --gradient-stop: 30%;  /* Point d'arrêt adapté pour mobile */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    h1 {
+      --gradient-stop: 45%;  /* Point d'arrêt original pour desktop */
+    }
   }
       
   h2 {
@@ -68,6 +81,11 @@ body.menu-open {
     text-shadow: 2px 1px 1px #feffbe;
     color: var(--text-primary);
     text-decoration: underline !important;
+  }
+
+  h3.no-underline {
+    @apply text-2xl md:text-4xl text-black text-center font-open-sans pb-8 shadow-accent;
+    text-decoration: none !important;
   }
 
   p {
@@ -186,7 +204,6 @@ writing-vertical-rl {
   width: 100%;
   max-width: 90vw;
   margin: 0 auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -224,6 +241,21 @@ writing-vertical-rl {
   }
 }
 
+@keyframes fadeInFromCenter {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleX(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
 /* Classes d'animation pour les titres */
 .title-main {
   animation: fadeInSlideDown 1.5s ease-out;
@@ -234,6 +266,14 @@ writing-vertical-rl {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
+.text-from-center {
+  animation: fadeInFromCenter 2s ease-out;
+  opacity: 0; 
+  animation-fill-mode: forwards; 
+  transform-origin: center; 
+}
+
 
 /* Animation du menu au défilement */
 @keyframes slideInFromTop {
@@ -322,3 +362,4 @@ writing-vertical-rl {
     transform: none; /* Désactive l'agrandissement */
   }
 }
+

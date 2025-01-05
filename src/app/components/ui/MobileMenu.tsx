@@ -25,7 +25,7 @@ export const MobileMenu = () => {
   }
 
   return (
-    <div className="block md:hidden pl-4">
+    <div className="block lg:hidden pl-4">
       {/* Bouton Menu */}
       <button
         onClick={toggleMenu}
@@ -46,13 +46,13 @@ export const MobileMenu = () => {
 
           {/* Menu */}
           <div 
-            className="fixed left-10 top-45 h-auto w-48 bg-[#f2e205] p-4 rounded-lg shadow-lg z-50 transform animate-slide-in"
+            className="fixed left-1/2 -translate-x-1/2 top-20 h-auto w-[90%] sm:w-[60%] md:w-[40%] bg-[#f2e205] p-4 rounded-lg shadow-lg z-[1001] transform animate-slide-in"
           >
             <div className="flex flex-col space-y-2">
               <Link 
                 href={routes.info}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.info ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -61,7 +61,7 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.ecole}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.ecole ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -70,7 +70,7 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.oclub}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.oclub ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -79,7 +79,7 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.inscription}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.inscription ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -88,7 +88,7 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.lesactivites}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.lesactivites ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -97,7 +97,7 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.technique}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.technique ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
@@ -106,13 +106,13 @@ export const MobileMenu = () => {
               <Link 
                 href={routes.contact}
                 onClick={closeMenu}
-                className={`font-bebas text-2xl p-2 transition-colors ${
+                className={`font-bebas text-2xl p-2 transition-colors text-center ${
                   pathname === routes.contact ? 'text-[#A68A72]' : 'text-[#0d0000] hover:text-[#f3b705]'
                 }`}
               >
                 CONTACT
               </Link>
-            </div>
+            </div>       
           </div>
         </>
       )}
