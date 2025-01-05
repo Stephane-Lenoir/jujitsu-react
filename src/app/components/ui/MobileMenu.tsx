@@ -46,7 +46,7 @@ export const MobileMenu = () => {
 
           {/* Menu */}
           <div 
-            className="fixed left-1/2 -translate-x-1/2 top-20 h-auto w-[90%] sm:w-[60%] md:w-[40%] bg-[#f2e205] p-4 rounded-lg shadow-lg z-[1001] transform animate-slide-in"
+            className="fixed left-1/2 -translate-x-1/2 top-20 h-auto w-[70%] sm:w-[60%] md:w-[40%] bg-[#f2e205] p-4 rounded-lg shadow-lg z-[1001] transform animate-slide-in"
           >
             <div className="flex flex-col space-y-2">
               <Link 
