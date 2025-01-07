@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Bebas_Neue, Dancing_Script, Merriweather } from 'next/font/google'
 import { AudioProvider } from './context/AudioContext'
 import './globals.css'
+import Script from 'next/script'
 
 // Configuration des polices
 const inter = Inter({ subsets: ['latin'] })
@@ -42,6 +43,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+       <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-YRPV1FZMHQ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YRPV1FZMHQ');
+        `}
+      </Script>
       <body className={`
         ${inter.className}
         ${bebasNeue.variable}
