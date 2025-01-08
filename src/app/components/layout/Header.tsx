@@ -30,7 +30,7 @@ export const Header = () => {
         MÉTHODE WA-JUTSU - DISCIPLINE À BUT NON COMPÉTITIF
       </h2>
       <h3 className="md:text-4xl text-[#0d0000] text-center pb-8 shadow-accent title-sub no-underline">
-        Le club de Crégy les Meaux est affilié à l&apos;académie Européen de Ju-jitsu 
+        Le club de Crégy les Meaux est affilié à l&apos;académie Européenne de Ju-Jitsu 
       </h3>
 
       <div className="relative w-full max-w-[90vw] mx-auto">

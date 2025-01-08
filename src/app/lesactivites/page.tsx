@@ -50,7 +50,7 @@ export default function ActivitesPage() {
         <MotionDiv direction="left">
           <Carousel
             images={kagamiImages}
-            title=" Céremonie traditionnel : Le Kagami-Biraki"
+            title="Cérémonie traditionnelle : Le Kagami-Biraki"
             titlePosition="left"
           />
         </MotionDiv>
