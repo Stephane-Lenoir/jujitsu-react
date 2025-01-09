@@ -39,6 +39,8 @@ const adultsImages = [
   { src: '/imag-cours-adult/img1-10.webp', alt: 'Cours adultes 10' },
   { src: '/imag-cours-adult/img1-11.webp', alt: 'Cours adultes 11' },
   { src: '/imag-cours-adult/img1-12.webp', alt: 'Cours adultes 12' },
+  { src: '/imag-cours-adult/img1-13.webp', alt: 'Cours adultes 13' },
+  { src: '/imag-cours-adult/img1-14.webp', alt: 'Cours adultes 14' },
 ]
 
 export default function TechniquePage() {

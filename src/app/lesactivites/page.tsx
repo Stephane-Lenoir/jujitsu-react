@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     { src: '/img-kagami-titre/kagami-titre-17.webp', alt: 'Kagami 17' },
     { src: '/img-kagami-titre/kagami-titre-18.webp', alt: 'Kagami 18' },
     { src: '/img-kagami-titre/kagami-titre-19.webp', alt: 'Kagami 19' },
+    { src: '/img-kagami-titre/kagami-titre-20.webp', alt: 'Kagami 20' },
+    { src: '/img-kagami-titre/kagami-titre-21.webp', alt: 'Kagami 21' },
+    { src: '/img-kagami-titre/kagami-titre-22.webp', alt: 'Kagami 22' },
+    { src: '/img-kagami-titre/kagami-titre-23.webp', alt: 'Kagami 23' },
+    { src: '/img-kagami-titre/kagami-titre-24.webp', alt: 'Kagami 24' },
+    { src: '/img-kagami-titre/kagami-titre-25.webp', alt: 'Kagami 25' },
+    { src: '/img-kagami-titre/kagami-titre-26.webp', alt: 'Kagami 26' },
+    { src: '/img-kagami-titre/kagami-titre-27.webp', alt: 'Kagami 27' },
   ]
   
 

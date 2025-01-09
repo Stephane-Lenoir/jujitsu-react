@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { MainLayout } from '../components/layout/MainLayout'
-import { BushidoList } from '../components/ui/BushidoList'
 import { MotionDiv } from '../components/ui/MotionDiv'
+import BushidoImage from '../components/ui/BushidoImage'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Ju-Jitsu Crégy-les-Meaux Informations - Horaires et Contact',
@@ -15,7 +16,7 @@ export default function InfoPage() {
       <div className="flex flex-col md:flex-row justify-between px-4 md:px-20 pt-20 min-h-screen pb-20 gap-8">
         {/* Colonne de gauche - Bushido */}
         <div className="w-full md:w-1/3">
-          <BushidoList />
+          <BushidoImage />
         </div>
 
         {/* Colonne centrale - Retrouvez nous */}
@@ -91,6 +92,18 @@ export default function InfoPage() {
             </div>
           </MotionDiv>
         </div>        
+      </div>
+      <div className="w-full flex justify-center pb-10">
+        <MotionDiv direction="center">
+          <Image
+            src="/assets/images/logo-jujutsu.webp"
+            alt="Logo Ju-Jutsu Traditionnel"
+            width={400}
+            height={400}
+            className="max-w-xl mx-auto"
+            priority
+          />
+        </MotionDiv>
       </div>
     </MainLayout>
   )
