@@ -22,8 +22,8 @@ export const RequiredDocuments = () => {
     },
     {
       name: "Le bulletin d'inscription pour la saison, rempli et signé",
-      externalUrl: "https://site.wajutsu.club/wp-content/uploads/2023/07/ACSL-2023-2024-BULLETIN-D-INSCRIPTION.pdf",
-      isLocal: false
+      downloadUrl: "/documents/bulletin-inscription.pdf",
+      isLocal: true
     }
   ]
 
